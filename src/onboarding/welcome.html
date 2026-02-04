@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome to [EXTENSION_NAME]</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --zovo-violet: #7C3AED;
+      --zovo-violet-hover: #6D28D9;
+      --zovo-bg: #0A0A0B;
+      --zovo-bg-secondary: #18181B;
+      --zovo-text: #FAFAF9;
+      --zovo-text-secondary: #A1A1AA;
+      --zovo-border: #27272A;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      background: var(--zovo-bg);
+      color: var(--zovo-text);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 40px 20px;
+    }
+
+    .container {
+      max-width: 600px;
+      text-align: center;
+    }
+
+    .logo {
+      width: 80px;
+      height: 80px;
+      margin: 0 auto 24px;
+    }
+
+    .logo svg {
+      width: 100%;
+      height: 100%;
+    }
+
+    h1 {
+      font-size: 32px;
+      font-weight: 700;
+      margin-bottom: 16px;
+      letter-spacing: -0.02em;
+    }
+
+    .subtitle {
+      font-size: 18px;
+      color: var(--zovo-text-secondary);
+      margin-bottom: 48px;
+      line-height: 1.5;
+    }
+
+    .features {
+      text-align: left;
+      background: var(--zovo-bg-secondary);
+      border: 1px solid var(--zovo-border);
+      border-radius: 12px;
+      padding: 32px;
+      margin-bottom: 32px;
+    }
+
+    .feature {
+      display: flex;
+      gap: 16px;
+      margin-bottom: 24px;
+    }
+
+    .feature:last-child {
+      margin-bottom: 0;
+    }
+
+    .feature-icon {
+      width: 40px;
+      height: 40px;
+      background: var(--zovo-violet);
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .feature-icon svg {
+      width: 20px;
+      height: 20px;
+      color: white;
+    }
+
+    .feature-content h3 {
+      font-size: 16px;
+      font-weight: 600;
+      margin-bottom: 4px;
+    }
+
+    .feature-content p {
+      font-size: 14px;
+      color: var(--zovo-text-secondary);
+      line-height: 1.5;
+    }
+
+    .cta-button {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--zovo-violet);
+      color: white;
+      padding: 16px 32px;
+      border-radius: 8px;
+      font-size: 16px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: background 0.2s;
+    }
+
+    .cta-button:hover {
+      background: var(--zovo-violet-hover);
+    }
+
+    .footer {
+      margin-top: 48px;
+      font-size: 14px;
+      color: var(--zovo-text-secondary);
+    }
+
+    .footer a {
+      color: var(--zovo-violet);
+      text-decoration: none;
+    }
+
+    .footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="logo">
+      <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect width="80" height="80" rx="16" fill="#7C3AED"/>
+        <text x="40" y="56" font-family="Inter, sans-serif" font-size="48" font-weight="700" fill="white" text-anchor="middle">z</text>
+      </svg>
+    </div>
+
+    <h1>Welcome to [EXTENSION_NAME]!</h1>
+    <p class="subtitle">
+      [Brief description of what your extension does and how it helps the user.]
+    </p>
+
+    <div class="features">
+      <div class="feature">
+        <div class="feature-icon">
+          <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+          </svg>
+        </div>
+        <div class="feature-content">
+          <h3>Feature One</h3>
+          <p>Description of the first key feature and its benefit to the user.</p>
+        </div>
+      </div>
+
+      <div class="feature">
+        <div class="feature-icon">
+          <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+          </svg>
+        </div>
+        <div class="feature-content">
+          <h3>Privacy First</h3>
+          <p>All data stays on your device. No tracking, no analytics, no data collection.</p>
+        </div>
+      </div>
+
+      <div class="feature">
+        <div class="feature-icon">
+          <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
+          </svg>
+        </div>
+        <div class="feature-content">
+          <h3>Feature Three</h3>
+          <p>Description of another great feature that makes your extension useful.</p>
+        </div>
+      </div>
+    </div>
+
+    <a href="#" class="cta-button" id="getStarted">
+      Get Started
+      <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+      </svg>
+    </a>
+
+    <div class="footer">
+      <p>
+        Built with care by <a href="https://zovo.one" target="_blank">Zovo</a> |
+        <a href="mailto:hello@zovo.one">Get Support</a>
+      </p>
+    </div>
+  </div>
+
+  <script src="welcome.js"></script>
+</body>
+</html>
