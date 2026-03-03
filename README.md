@@ -1,14 +1,27 @@
 # [EXTENSION_NAME]
 
+[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.x-blue.svg)](https://www.typescriptlang.org/)
+[![Chrome Web Extension](https://img.shields.io/badge/Chrome-Web%20Extension-orange.svg)](https://developer.chrome.com/docs/extensions/)
+[![CI Status](https://github.com/theluckystrike/zovo-extension-template/actions/workflows/ci.yml/badge.svg)](https://github.com/theluckystrike/zovo-extension-template/actions)
+[![Discord](https://img.shields.io/badge/Discord-Zovo-blueviolet.svg?logo=discord)](https://discord.gg/zovo)
+[![Website](https://img.shields.io/badge/Website-zovo.one-blue)](https://zovo.one)
+[![GitHub Stars](https://img.shields.io/github/stars/theluckystrike/zovo-extension-template?style=social)](https://github.com/theluckystrike/zovo-extension-template)
+
 > [Short description of your extension]
 
 Part of the [Zovo](https://zovo.one) family of privacy-first Chrome extensions.
+
+## 🔗 Links
+
+- **Website:** [zovo.one](https://zovo.one)
+- **Template Documentation:** [docs.zovo.one](https://docs.zovo.one)
 
 ## Quick Start
 
 ```bash
 # Clone this template
-git clone https://github.com/zovo/extension-template.git my-extension
+git clone https://github.com/theluckystrike/zovo-extension-template.git my-extension
 cd my-extension
 
 # Run interactive setup
@@ -29,6 +42,40 @@ npm run dev
 # 3. Click "Load unpacked"
 # 4. Select the dist/ folder
 ```
+
+## Installation
+
+### From Source
+
+```bash
+# Clone the repository
+git clone https://github.com/theluckystrike/zovo-extension-template.git
+cd zovo-extension-template
+
+# Install dependencies
+npm install
+
+# Generate icons
+npm run icons
+
+# Start development server
+npm run dev
+```
+
+### Load into Chrome
+
+1. Open `chrome://extensions`
+2. Enable **Developer Mode** (top right toggle)
+3. Click **Load unpacked**
+4. Select the `dist/` folder
+
+## Usage
+
+After loading the extension, you can:
+
+- Interact with the popup by clicking the extension icon
+- Access the options page via right-click → Options
+- Use keyboard shortcuts defined in `manifest.json`
 
 ## Project Structure
 
@@ -158,6 +205,45 @@ This extension follows Zovo's privacy-first principles:
 
 - Email: hello@zovo.one
 - Website: https://zovo.one
+
+## Contributing
+
+Contributions are welcome! Please read our [contributing guidelines](CONTRIBUTING.md) before submitting PRs.
+
+### Development Workflow
+
+1. Fork the repository
+2. Create a feature branch: `git checkout -b feature/my-feature`
+3. Make your changes and test locally with `npm run dev`
+4. Run linting and tests: `npm run lint && npm test`
+5. Commit your changes: `git commit -am 'Add new feature'`
+6. Push to the branch: `git push origin feature/my-feature`
+7. Submit a Pull Request
+
+### Code Style
+
+- Use TypeScript for all new code
+- Follow existing code formatting (Prettier)
+- Write tests for new features
+- Update documentation for any changes
+
+## See Also
+
+### Related Zovo Repositories
+
+- [zovo-types-webext](https://github.com/theluckystrike/zovo-types-webext) - Comprehensive TypeScript type definitions for browser extensions
+- [zovo-chrome-extensions](https://github.com/theluckystrike/zovo-chrome-extensions) - Collection of Zovo Chrome extensions
+- [webext-bridge](https://github.com/theluckystrike/webext-bridge) - Cross-context messaging for WebExtensions
+- [webext-options-page](https://github.com/theluckystrike/webext-options-page) - Pre-built options page framework
+
+### Zovo Chrome Extensions
+
+- [Zovo Tab Manager](https://chrome.google.com/webstore/detail/zovo-tab-manager) - Manage your tabs efficiently
+- [Zovo Focus](https://chrome.google.com/webstore/detail/zovo-focus) - Block distractions and stay focused
+- [Zovo Permissions Scanner](https://chrome.google.com/webstore/detail/zovo-permissions-scanner) - Check extension privacy grades
+- [Zovo Cookie Manager](https://chrome.google.com/webstore) - Advanced cookie management
+
+Visit [zovo.one](https://zovo.one) for more information about Zovo products.
 
 ## License
 
