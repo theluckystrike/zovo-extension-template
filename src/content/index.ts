@@ -111,6 +111,3 @@ export function waitForElement(
 
 // Log when content script loads
 console.debug('[EXTENSION_NAME] content script loaded');
-
-// Export for module usage
-export { getCurrentUrl, getCurrentHostname, queryElements, waitForElement };

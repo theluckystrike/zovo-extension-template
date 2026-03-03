@@ -66,7 +66,7 @@ const App: React.FC = () => {
         <div className="zovo-card mb-4">
           <h2 className="text-lg font-semibold mb-2">Welcome</h2>
           <p className="text-zovo-text-secondary text-sm">
-            Your extension is ready to use. Customize this popup for your needs.
+            {settings ? `Settings loaded: ${JSON.stringify(settings)}` : 'Your extension is ready to use. Customize this popup for your needs.'}
           </p>
         </div>
 
