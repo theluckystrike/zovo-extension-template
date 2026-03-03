@@ -14,8 +14,7 @@ Part of the [Zovo](https://zovo.one) family of privacy-first Chrome extensions.
 
 ## 🔗 Links
 
-- **Website:** [zovo.one](https://zovo.one)
-- **Template Documentation:** [docs.zovo.one](https://docs.zovo.one)
+- **Website:** [zovo.one](https://zovo.one) (or remove this line)
 
 ## Quick Start
 
@@ -241,7 +240,7 @@ Contributions are welcome! Please read our [contributing guidelines](CONTRIBUTIN
 - [Zovo Tab Manager](https://chrome.google.com/webstore/detail/zovo-tab-manager) - Manage your tabs efficiently
 - [Zovo Focus](https://chrome.google.com/webstore/detail/zovo-focus) - Block distractions and stay focused
 - [Zovo Permissions Scanner](https://chrome.google.com/webstore/detail/zovo-permissions-scanner) - Check extension privacy grades
-- [Zovo Cookie Manager](https://chrome.google.com/webstore) - Advanced cookie management
+- [Zovo Cookie Manager](https://chrome.google.com/webstore/detail/zovo-cookie-manager) - Advanced cookie management
 
 Visit [zovo.one](https://zovo.one) for more information about Zovo products.
 
