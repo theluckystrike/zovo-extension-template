@@ -3,65 +3,64 @@
  * Add global mocks and configuration here
  */
 
+declare const global: {
+  chrome: any;
+};
+
 // Mock chrome API
 const mockChrome = {
   runtime: {
-    sendMessage: jest.fn(),
+    sendMessage: () => {},
     onMessage: {
-      addListener: jest.fn(),
-      removeListener: jest.fn(),
+      addListener: () => {},
+      removeListener: () => {},
     },
-    getURL: jest.fn((path: string) => `chrome-extension://mock-id/${path}`),
-    getManifest: jest.fn(() => ({
+    getURL: (path: string) => `chrome-extension://mock-id/${path}`,
+    getManifest: () => ({
       version: '1.0.0',
       name: 'Test Extension',
-    })),
+    }),
     onInstalled: {
-      addListener: jest.fn(),
+      addListener: () => {},
     },
   },
   storage: {
     local: {
-      get: jest.fn().mockResolvedValue({}),
-      set: jest.fn().mockResolvedValue(undefined),
-      remove: jest.fn().mockResolvedValue(undefined),
-      clear: jest.fn().mockResolvedValue(undefined),
+      get: async () => ({}),
+      set: async () => {},
+      remove: async () => {},
+      clear: async () => {},
     },
     sync: {
-      get: jest.fn().mockResolvedValue({}),
-      set: jest.fn().mockResolvedValue(undefined),
-      remove: jest.fn().mockResolvedValue(undefined),
-      clear: jest.fn().mockResolvedValue(undefined),
+      get: async () => ({}),
+      set: async () => {},
+      remove: async () => {},
+      clear: async () => {},
     },
     onChanged: {
-      addListener: jest.fn(),
+      addListener: () => {},
     },
   },
   tabs: {
-    query: jest.fn(),
-    sendMessage: jest.fn(),
-    create: jest.fn(),
-    update: jest.fn(),
+    query: async () => [],
+    sendMessage: async () => {},
+    create: async () => {},
+    update: async () => {},
   },
   action: {
-    setBadgeText: jest.fn(),
-    setBadgeBackgroundColor: jest.fn(),
+    setBadgeText: () => {},
+    setBadgeBackgroundColor: () => {},
   },
   alarms: {
-    create: jest.fn(),
-    clear: jest.fn(),
+    create: () => {},
+    clear: () => {},
     onAlarm: {
-      addListener: jest.fn(),
+      addListener: () => {},
     },
   },
   notifications: {
-    create: jest.fn(),
+    create: () => {},
   },
 };
 
 (global as any).chrome = mockChrome;
-
-// Reset mocks between tests
-beforeEach(() => {
-  jest.clearAllMocks();
-});
